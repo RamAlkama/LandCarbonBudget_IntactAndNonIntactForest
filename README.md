@@ -1,6 +1,7 @@
 # Land Carbon Budget Intact and Non-Intact Forest
 ------------------------------------
   Intact and Non Intact forest NBP
+            TRENDY v11
 -------------------------------------
 
 Models that produce nbp at pft level
@@ -17,7 +18,7 @@ Models that produce nbp at pft level
 5) Since the unit of forest NBP is kg/m2/s 
    we multiply it by Intact and NonIntact forest area 
    Intact and NonIntact "Forest" area came from a combination of Hansen "Tree" cover and Popatov Intat forest mask
-   This exircice was done in Google Earth Engine platform 
+   This exircice was done in Google Earth Engine platform (see GEE_example.png)
    We used FAO difenition of forest to convert tree cover to forest cover: (minimum of 20% of tree cover per gridcell and half ha connection)  
 
 Contact: ram.alkama@hotmail.fr
