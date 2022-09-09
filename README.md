@@ -15,11 +15,16 @@ Models that produce nbp at pft level (see attached python file IntactAndNonIntac
 
 4) If low spatial resolution regrid into 0.5x0.5 deg
 
-5) Since the unit of forest NBP is kg/m2/s we multiply it by Intact and NonIntact forest area. 
-   Intact and NonIntact "Forest" area came from a combination of Hansen "Tree" cover and Popatov Intat forest mask.
-   This exircice was done in Google Earth Engine platform (see attached GEE_example.png).
-   We used FAO difenition of forest to convert tree cover to forest cover: (minimum of 20% of tree cover per gridcell and half ha connection).  
-   For more info regarding this script contact ram.alkama@hotmail.fr.
-   
-6) 
+
+5) The following steps are done in Google Earth Engine (GEE) platform: 
+#      - Convert Hansen tree cover (30m spatial resolution) to forest cover. To do this I used the FAO definition of forest
+#         (more that 20% tree cover and a minimum continuity of 0.5 ha).
+#      - Intact and Non-Intact "Forest" masks came from Popatov except over Canada and Brazil who provide more acurate masks.
+#      - Merge the two datasets to get the Intact and Non-Intact forest area per gridcells of around 30m spatial resolution. 
+#      - Redrid the data to 0.5 degree spatial resolution. Because of the computational issue, this has been done in two steps.
+#        From 30m to 0.01 degree, then from 0.01 to 0.5 degree.
+#      - The 0.5 degree Intact and Non-Intact forest area is saved in "IntactAndNonIntactForest_0.5deg.nc" NetCDF file. 
+#      The NetCDF and Google Earth Engine Scripts are availble via request to ram.alkama@hotmail.fr
+6) This NetCDF file is then used to convert forest NBP (kg C/m2/s) into 
+ 
 last update: 08/09/2022
