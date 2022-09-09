@@ -25,6 +25,7 @@ Models that produce nbp at pft level (see attached python file IntactAndNonIntac
         From 30m to 0.01 degree, then from 0.01 to 0.5 degree.
       - The 0.5 degree Intact and Non-Intact forest area is saved in "IntactAndNonIntactForest_0.5deg.nc" NetCDF file. 
       The NetCDF and Google Earth Engine Scripts are availble via request to ram.alkama[at]hotmail.fr
-6) This NetCDF file is then used to convert forest NBP (kg C/m2/s) into 
+6) This NetCDF file is then used to convert forest NBP (kg C/m2/s) into (kgC/gridcell/yr) for both Intact and NonIntact forest.
+
  
 last update: 08/09/2022
