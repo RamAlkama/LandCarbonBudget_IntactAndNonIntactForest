@@ -136,7 +136,7 @@ if False: # False because the data is not yet available, turn it to True when ex
 #      - Redrid the data to 0.5 degree spatial resolution. Because of the computational issue, this has been done in two steps.
 #        From 30m to 0.01 degree, then from 0.01 to 0.5 degree.
 #      - The 0.5 degree Intact and Non-Intact forest area is saved in "IntactAndNonIntactForest_0.5deg.nc" NetCDF file. 
-# 6) This NetCDF file is then used to convert forest NBP (kg C/m2/s) into 
+# 6) This NetCDF file is then used to convert forest NBP (kgC/m2/s) into (kgC/gridcell/yr) for both Intact and NonIntact forest.
 # --------------------
 os.chdir('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v9/TRENDY-v11/Workdir/')
 
