@@ -1,7 +1,7 @@
-*/
+/*
 Contact: ram.alkama@hotmail.fr
 last update: 09/09/2022
-/*
+*/
 var treeCoverVisParam = {
   bands: ['treecover2000'],
   min: 0,
