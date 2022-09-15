@@ -19,7 +19,7 @@ Models that produce nbp at pft level (see attached python file IntactAndNonIntac
 5) The following steps are done in Google Earth Engine (GEE) platform: 
       - Convert Hansen tree cover (30m spatial resolution) to forest cover. To do this I used the FAO definition of forest
          (more that 20% tree cover and a minimum continuity of 0.5 ha).
-      - Intact and Non-Intact "Forest" masks came from Popatov except over Canada and Brazil who provide more acurate masks.
+      - Intact and Non-Intact "Forest" masks came from Popatov except over Canada and Brazil from where we got more acurate masks.
       - Merge the two datasets to get the Intact and Non-Intact forest area per gridcells of around 30m spatial resolution. 
       - Redrid the data to 0.5 degree spatial resolution. Because of the computational issue, this has been done in two steps.
         From 30m to 0.01 degree, then from 0.01 to 0.5 degree.
