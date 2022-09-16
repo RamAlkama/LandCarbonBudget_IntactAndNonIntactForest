@@ -13,8 +13,7 @@ The following steps are done in Google Earth Engine (GEE) platform:
   4) Redrid the data to 0.5 degree spatial resolution. 
      Because of the computational issue, this has been done in two steps. From 30m to 0.01 degree, then from 0.01 to 0.5 degree.
   5) The 0.5 degree Intact and Non-Intact forest area is saved in "IntactAndNonIntactForest_0.5deg.nc" NetCDF file.
-     The javascript code "IntactAndNonIntactForest_0.5deg.js" that is used to generate this file is available in the:
-     https://github.com/RamAlkama/LandCarbonBudget_IntactAndNonIntactForest 
+     The javascript code "IntactAndNonIntactForest_0.5deg.js" that is used to generate this file is available here. 
 
 This last step is done outside GEE
 
