@@ -17,9 +17,10 @@ The following steps are done in Google Earth Engine (GEE) platform:
      https://github.com/RamAlkama/LandCarbonBudget_IntactAndNonIntactForest 
 
 This last step is done outside GEE
+
   6) We compute the ratio between observed forest cover and the median forest cover coming from the 10 TRENDY S2 models that provide 
      landCoverFrac. Models are:'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP','LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'
-     This variable is also included in the "IntactAndNonIntactForest_0.5deg.nc" NetCDF file and used in the Step (5)
+     This variable is also included in the "IntactAndNonIntactForest_0.5deg.nc" NetCDF file and used in the Step (5).
 
 The NetCDF is availble via request to ram.alkama[at]hotmail.fr
 
@@ -52,7 +53,7 @@ Step (3) Intact and Non Intact forest NBP from models that provide nbppft
  
 *********************************************************************************
 Step (4) Intact and Non Intact forest NBP from models that did not provide nbppft
-         but provide landCoverFrac
+         but provide landCoverFrac.
          Models: 'LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'
 *********************************************************************************
   1) If low spatial resolution regrid into 0.5x0.5 deg
