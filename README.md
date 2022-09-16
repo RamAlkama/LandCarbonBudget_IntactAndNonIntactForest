@@ -67,8 +67,8 @@ Step (4) Intact and Non Intact forest NBP from models that did not provide nbppf
   
 
 *********************************************************************************************************
-Step (5) Intact and Non Intact forest NBP from models that neither provide nbppft nor landCoverFrac
-         - The models are: 'IBIS','CLM5.0','ORCHIDEE','ISAM','DLEM','LPJ-GUESS'
+Step (5) Intact and Non Intact forest NBP from models that neither provide nbppft nor landCoverFrac.
+ - The models are: 'IBIS','CLM5.0','ORCHIDEE','ISAM','DLEM','LPJ-GUESS'
 
 NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model we used it in this step
 **********************************************************************************************************
