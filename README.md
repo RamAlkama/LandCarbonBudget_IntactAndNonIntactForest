@@ -53,7 +53,7 @@ Step (3) Intact and Non Intact forest NBP from models that provide nbppft.
 *********************************************************************************
 Step (4) Intact and Non Intact forest NBP from models that did not provide nbppft
          but provide landCoverFrac.
-         - The models are: 'LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'
+ - The models are: 'LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'
 *********************************************************************************
   1) If low spatial resolution regrid into 0.5x0.5 deg
 
