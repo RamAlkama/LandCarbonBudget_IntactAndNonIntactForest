@@ -236,7 +236,7 @@ if True:
 
 
 # ----------------------------------------------------------------------
-# Step (4) Models that did not provide nbppft but include landCoverFrac
+# Step (4) Models that did not provide nbppft but provide landCoverFrac
 # ----------------------------------------------------------------------
 
 if True:
