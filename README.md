@@ -74,7 +74,7 @@ NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model
 **********************************************************************************************************
   1) If low spatial resolution regrid into 0.5x0.5 deg
 
-  2) We use the ratio between observed and median of 10 TRENDY S2 models that is stored in
+  2) We use the ratio between observed forest cover and median of the 10 TRENDY S2 models. This ratio is stored in
      "IntactAndNonIntactForest_0.5deg.nc" NetCDF file. See Step (1.6).
 
   3) multiply simulated nbp by this ratio, land area and number of seconds in the year
