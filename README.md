@@ -1,8 +1,8 @@
 # Land Carbon Budget: Intact and Non-Intact Forest NBP from TRENDY-v11
 
-************************************
- Step (1) Create an auxiliary file 
-************************************
+***********************************************************************
+ Step (1) Create an auxiliary file "IntactAndNonIntactForest_0.5deg.nc"
+***********************************************************************
 The following steps are done in Google Earth Engine (GEE) platform:
 
   1) Convert Hansen tree cover (30m spatial resolution) to forest cover. 
