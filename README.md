@@ -1,9 +1,6 @@
-# Land Carbon Budget Intact and Non-Intact Forest NBP
-#    //----------------------------------------------------------------//
-#   //----------------------------------------------------------------//
-#  //Intact and Non Intact forest NBP from TRENDY-v11 S2 simulations //
-# //----------------------------------------------------------------//
-#//----------------------------------------------------------------//
+# Land Carbon Budget: Intact and Non-Intact Forest NBP
+#                   TRENDY-v11
+
 ************************************
  Step (1) Create an auxiliary file 
 ************************************
