@@ -108,7 +108,7 @@ cdms.setNetcdfDeflateLevelFlag(0)
 if True:
   for var in ['nbppft','landCoverFrac','nbp']:
     for fil in glob.glob("*%s.nc"%var):
-      filo='/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v9/TRENDY-v11/Workdir/'+fil
+      filo='/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v11/Workdir/'+fil
       if not os.path.exists(filo):
         os.system("cdo -P 12 yearmean -selyear,1990/2021 %s %s"%(fil,filo))
 
@@ -130,10 +130,10 @@ if True:
   var='nbppft'
   if model=='CLASSIC':var='nbp'
   print model
-  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v9/TRENDY-v11/Workdir/%s_S2_nbppft.nc'%model)
+  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v11/Workdir/%s_S2_nbppft.nc'%model)
   nbppft=f(var)
   f.close()
-  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v9/TRENDY-v11/Workdir/%s_S2_landCoverFrac.nc'%model)
+  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v11/Workdir/%s_S2_landCoverFrac.nc'%model)
   pftFrac=f('landCoverFrac',squeeze=1)
   f.close()
   AXIS=nbppft[:,0,:,:].getAxisList()
@@ -156,7 +156,7 @@ if True:
   nbp=cdms.createVariable(nbp,fill_value = 1.e+20,dtype='d',axes =AXIS) 
   nbp.units="kg m-2 s-1"
   nbp.long_name = "Carbon Mass Flux out of Atmosphere due to Net Biospheric Production on Forest"
-  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v9/TRENDY-v11/Workdir/%s_NBP_forest_1990_2021.nc'%model,'w')
+  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v11/Workdir/%s_NBP_forest_1990_2021.nc'%model,'w')
   f.write(nbp,id='nbp')
   f.close()
 
@@ -173,16 +173,16 @@ if False: # False because the data is not yet available, turn it to True when ex
       os.system("cdo -P 12 yearmean -selyear,1990/2021 %s %s"%(fil,filo))
 
   print model
-  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v9/TRENDY-v11/Workdir/%s_S2_nppTree.nc'%model)
+  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v11/Workdir/%s_S2_nppTree.nc'%model)
   nppTree=f('nppTree')
   f.close()
-  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v9/TRENDY-v11/Workdir/%s_S2_rhTree.nc'%model)
+  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v11/Workdir/%s_S2_rhTree.nc'%model)
   rhTree=f('rhTree')
   f.close()
-  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v9/TRENDY-v11/Workdir/%s_S2_fFire.nc'%model)
+  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v11/Workdir/%s_S2_fFire.nc'%model)
   fFire=f('fFire')
   f.close()
-  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v9/TRENDY-v11/Workdir/%s_S2_fCLeach.nc'%model)
+  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v11/Workdir/%s_S2_fCLeach.nc'%model)
   fCleach=f('fCLeach')
   f.close()
   AXIS=nppTree.getAxisList()
@@ -191,7 +191,7 @@ if False: # False because the data is not yet available, turn it to True when ex
   nbpTree=cdms.createVariable(nbpTree,fill_value = 1.e+20,dtype='d',axes =AXIS) 
   nbpTree.units="kg m-2 s-1"
   nbpTree.long_name = "Carbon Mass Flux out of Atmosphere due to Net Biospheric Production on Forest"
-  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v9/TRENDY-v11/Workdir/%s_NBP_forest_1990_2021.nc'%model,'w')
+  f=cdms.open('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v11/Workdir/%s_NBP_forest_1990_2021.nc'%model,'w')
   f.write(nbpTree,id='nbp')
   f.close()
 
@@ -199,7 +199,7 @@ if False: # False because the data is not yet available, turn it to True when ex
 # - If low spatial resolution regrid into 0.5x0.5 deg
 # - Split forest NBP into Intact and Non Intact Forest NBP
 # --------------------
-os.chdir('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v9/TRENDY-v11/Workdir/')
+os.chdir('/ESS_EarthObs/DATA_PRODUCTS/TRENDY-v11/Workdir/')
 
 if True:
  for model in ['CLASSIC','YIBs','CABLE-POP','JSBACH']:#'CLASSIC-N','OCN','ISBA-CTRIP']:
