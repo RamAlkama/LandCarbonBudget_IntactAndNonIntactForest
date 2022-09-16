@@ -37,7 +37,7 @@ Step (3) Intact and Non Intact forest NBP from models that provide nbppft.
 ***************************************************************************
 
   1) From landCoverFrac and nbppft we computed mean forest nbp (kg/m2/s)for each gridcell.
-        ForestNBP= Sum(ForestPFTfrac * Forestnbppft)/sum(ForestPFTfrac)
+     [ ForestNBP= Sum(ForestPFTfrac * Forestnbppft)/sum(ForestPFTfrac) ]
 
   2) Compute mean forest nbp for ISBA-CTRIP model 
      nbpTree=nppTree-rhTree-DisturbancesTree
