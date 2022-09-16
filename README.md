@@ -32,8 +32,8 @@ Step (2) select dates and do annual mean
   2) do annual mean 
 
 **************************************************************************
-Step (3) Intact and Non Intact forest NBP from models that provide nbppft
-           Models: 'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP'
+Step (3) Intact and Non Intact forest NBP from models that provide nbppft.
+         The models are: 'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP'
 ***************************************************************************
 
   1) From landCoverFrac and nbppft we computed mean forest nbp (kg/m2/s)
@@ -53,7 +53,7 @@ Step (3) Intact and Non Intact forest NBP from models that provide nbppft
 *********************************************************************************
 Step (4) Intact and Non Intact forest NBP from models that did not provide nbppft
          but provide landCoverFrac.
-         Models: 'LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'
+         The modelsare: 'LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'
 *********************************************************************************
   1) If low spatial resolution regrid into 0.5x0.5 deg
 
@@ -68,7 +68,7 @@ Step (4) Intact and Non Intact forest NBP from models that did not provide nbppf
 
 *********************************************************************************************************
 Step (5) Intact and Non Intact forest NBP from models that neither provide nbppft nor landCoverFrac
-         Models: 'IBIS','CLM5.0','ORCHIDEE','ISAM','DLEM','LPJ-GUESS'
+         The models are: 'IBIS','CLM5.0','ORCHIDEE','ISAM','DLEM','LPJ-GUESS'
 
 NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model we used it in this step
 **********************************************************************************************************
