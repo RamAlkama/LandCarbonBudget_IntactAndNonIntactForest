@@ -19,8 +19,8 @@ The following steps are done in Google Earth Engine (GEE) platform:
 This last step is done outside GEE
 
   6) We compute the ratio between observed forest cover and the median forest cover coming from the 10 TRENDY S2 models that provide 
-     landCoverFrac. Models are:'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP','LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'
-     This variable is also included in the "IntactAndNonIntactForest_0.5deg.nc" NetCDF file and used in the Step (5).
+     landCoverFrac. Models are:'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP','LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'.
+     This ratio is included in the "IntactAndNonIntactForest_0.5deg.nc" NetCDF file and used in the Step (5).
 
 The NetCDF is availble via request to ram.alkama[at]hotmail.fr
 
