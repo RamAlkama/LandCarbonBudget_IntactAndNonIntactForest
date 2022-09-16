@@ -36,14 +36,14 @@ Step (3) Intact and Non Intact forest NBP from models that provide nbppft.
          The models are: 'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP'
 ***************************************************************************
 
-  1) From landCoverFrac and nbppft we computed mean forest nbp (kg/m2/s)
-     for each gridcell ForestNBP= Sum(ForestPFTfrac * Forestnbppft)/sum(ForestPFTfrac)
+  1) From landCoverFrac and nbppft we computed mean forest nbp (kg/m2/s)for each gridcell.
+     ForestNBP= Sum(ForestPFTfrac * Forestnbppft)/sum(ForestPFTfrac)
 
   2) Compute mean forest nbp for ISBA-CTRIP model 
      nbpTree=nppTree-rhTree-DisturbancesTree
      where:DisturbancesTree=fCleach+fFire
      We assume most of fFire and fCleach originates from forest, if forest exists in the gridcell.
-     we then do same as 1) above
+     we then do same as 1) above.
 
   3) If low spatial resolution regrid into 0.5x0.5 deg
 
