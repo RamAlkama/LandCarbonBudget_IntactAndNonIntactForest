@@ -323,15 +323,12 @@ Intact=MV.where(All!=0,f('IntactForestArea',lat=(-60,90),lon=(-180,180))/All,0)
 NonIntact=MV.where(All!=0,f('NonIntactForestArea',lat=(-60,90),lon=(-180,180))/All,0)
 landFrac=f('LandCoverFrac',lat=(-60,90),lon=(-180,180))
 cell_area=f('cell_area',lat=(-60,90),lon=(-180,180))
+ratio=f('ratio',lat=(-60,90),lon=(-180,180))
 f.close()
 landArea=cell_area*landFrac
 
 Intact=cdms.createVariable(Intact,fill_value = 1.e+20,dtype='f',axes =All.getAxisList())
 NonIntact=cdms.createVariable(NonIntact,fill_value = 1.e+20,dtype='f',axes =All.getAxisList())
-
-f=cdms.open('Ratio.nc')
-ratio=f('ratio',lat=(-60,90),lon=(-180,180))
-f.close()
 
 Intact=Intact*landArea*ratio
 NonIntact=NonIntact*landArea*ratio
