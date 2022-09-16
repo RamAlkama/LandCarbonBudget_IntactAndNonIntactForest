@@ -33,7 +33,7 @@ Step (2) select dates and do annual mean
 
 **************************************************************************
 Step (3) Intact and Non Intact forest NBP from models that provide nbppft.
-         - The models are: 'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP'
+ - The models are: 'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP'
 ***************************************************************************
 
   1) From landCoverFrac and nbppft we computed mean forest nbp (kg/m2/s)for each gridcell.
