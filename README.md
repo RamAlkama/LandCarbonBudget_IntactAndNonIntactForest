@@ -82,8 +82,10 @@ NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model
     ==> from kg/m2/s to kg/gridcell/yr
 
   4) Split into Intact and Non-Intact forest NBP using "IntactAndNonIntactForest_0.5deg.nc", see step (1)
+  
+  
 
 
 
-Contact: ram.alkama[at]hotmail.fr
-last update: 09/09/2022
+ -Contact: ram.alkama[at]hotmail.fr
+ -last update: 09/09/2022
