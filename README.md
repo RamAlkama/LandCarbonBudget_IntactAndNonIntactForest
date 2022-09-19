@@ -58,7 +58,7 @@ Step (4) Intact and Non Intact forest NBP from models that did not provide nbppf
 *********************************************************************************
   1) If low spatial resolution regrid nbp and landCoverFrac into 0.5x0.5 deg.
 
-  2) for each model and gridcell, we compute the ratio between observed and TRENDY-v11 S2 (from landCoverFrac) forest cover.
+  2) for each model and gridcell, we compute the ratio between observed and TRENDY-v11 S2 (from landCoverFrac) forest cover. Somes models did not provide S2 landCoverFrac but did it for S3. In this case we used the first year of S3 ladCoverFrac. 
 
   3) multiply simulated nbp by this ratio, land area and number of seconds in the year
     ==> from kg/m2/s to kg/gridcell/yr
