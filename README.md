@@ -81,8 +81,7 @@ NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model
   3) multiply simulated nbp by this ratio, land area and number of seconds in the year
     ==> from kg/m2/s to kg/gridcell/yr
 
-  4) Split into Intact and Non-Intact forest NBP using the fraction between Intact or Non-Intact by total forest coming from "IntactAndNonIntactForest_0.5deg.nc" 
-     "see step (1)"
+  4) Split into Intact and Non-Intact forest NBP using "IntactAndNonIntactForest_0.5deg.nc", see step (1)
 
 
 
