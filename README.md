@@ -6,8 +6,8 @@
 The following steps are done in Google Earth Engine (GEE) platform:
 
   1) Convert Hansen tree cover (30m spatial resolution) to forest cover. 
-     To do this, FAO definition of forest (more that 20% tree cover and a minimum continuity of 0.5 ha) is used.
-  2) Intact and Non-Intact "Forest" masks came from Popatov except over Canada and Brazil from where we got more acurate masks.
+     To do this, FAO definition of forest (more than 20% tree cover per gridcell and a minimum continuity of 0.5 ha) is used.
+  2) Intact and Non-Intact "Forest" masks came from Popatov except over Canada and Brazil from where we got a more acurate masks.
        ==> Popatov mask was updated over Brazil and Canada
   3) Merge the two datasets to get the Intact and Non-Intact forest area per gridcells of around 30m spatial resolution.
   4) Redrid the data to 0.5 degree spatial resolution. 
@@ -34,7 +34,7 @@ Step (2) select dates and do annual mean
 **************************************************************************
 Step (3) Intact and Non Intact forest NBP from models that provide nbppft.
  - The models are: 'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP'
- - ISBA-CTRIP is not yet uploaded in the server but the method is included here
+ - ISBA-CTRIP is not yet uploaded in the server at the time of writing this but the method is included here
 ***************************************************************************
 
   1) From landCoverFrac and nbppft we computed mean forest nbp (kg/m2/s)for each gridcell.
@@ -56,15 +56,15 @@ Step (4) Intact and Non Intact forest NBP from models that did not provide nbppf
          but provide landCoverFrac.
  - The models are: 'LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'
 *********************************************************************************
-  1) If low spatial resolution regrid into 0.5x0.5 deg
+  1) If low spatial resolution regrid nbp and landCoverFrac into 0.5x0.5 deg.
 
-  2) for each model and gridcell, we compute the ratio between observed and TRENDY-v11 S2 forest cover
+  2) for each model and gridcell, we compute the ratio between observed and TRENDY-v11 S2 (from landCoverFrac) forest cover.
 
   3) multiply simulated nbp by this ratio, land area and number of seconds in the year
     ==> from kg/m2/s to kg/gridcell/yr
 
   4) Split into Intact and Non-Intact forest NBP using "IntactAndNonIntactForest_0.5deg.nc" 
-     "see step (1)"
+     "see step (1)".
   
 
 *********************************************************************************************************
@@ -81,7 +81,7 @@ NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model
   3) multiply simulated nbp by this ratio, land area and number of seconds in the year
     ==> from kg/m2/s to kg/gridcell/yr
 
-  4) Split into Intact and Non-Intact forest NBP using "IntactAndNonIntactForest_0.5deg.nc" 
+  4) Split into Intact and Non-Intact forest NBP using the fraction between Intact or Non-Intact by total forest coming from "IntactAndNonIntactForest_0.5deg.nc" 
      "see step (1)"
 
 
