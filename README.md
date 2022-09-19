@@ -87,5 +87,5 @@ NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model
 
 
 
-#Contact: ram.alkama[at]hotmail.fr
-#last update: 09/09/2022
+- Contact: ram.alkama[at]hotmail.fr
+- last update: 09/09/2022
