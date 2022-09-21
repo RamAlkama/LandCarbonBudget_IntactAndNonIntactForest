@@ -28,7 +28,7 @@ The NetCDF is availble via request to ram.alkama[at]hotmail.fr
 Step (2) select dates and do annual mean
 ***************************************************************************
  For all models we
-  1) extract nbppft, nbp and landCover files (if available) over 1990-2021 
+  1) extract nbppft, nbp and landCoverFrac files (if available) over 1990-2021 
   2) do annual mean 
 
 **************************************************************************
