@@ -338,7 +338,7 @@ if True :
  for fil in glob.glob("*_nbp.nc"):
    model=fil.split('_')[0]
    #print model
-   if model in ['IBIS','CLM5.0','ORCHIDEE','ISAM','DLEM','LPJ-GUESS']:
+   if model in ['IBIS','CLM5.0','ORCHIDEE','ISAM','DLEM','LPJ-GUESS','LPJ']:
      f=cdms.open(fil)
      var='nbp'
      v=f[var].getLongitude()
