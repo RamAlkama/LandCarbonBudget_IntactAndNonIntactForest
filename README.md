@@ -39,6 +39,8 @@ Step (2) select dates and do annual mean
   1) extract nbppft, nbp and landCoverFrac files (if available) over 1990-2021 
   2) do annual mean 
 
+nbppft = nbp per plant functional type
+
 **************************************************************************
 Step (3) Intact and Non Intact forest NBP from models that provide nbppft.
  - The models are: 'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP'
