@@ -89,7 +89,7 @@ Step (4) Intact and Non Intact forest NBP from models that did not provide nbppf
 Step (5) Intact and Non Intact forest NBP from models that neither provide nbppft nor landCoverFrac.
  - The models are: 'IBIS','CLM5.0','ORCHIDEE','ISAM','DLEM','LPJ-GUESS','LPJ'
 
-NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model we used it in this step
+NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model we used it in this step. Indeed, the sum of PFTs fraction is equal to 1 in all TRENDY models except LPJ-GUESS which allow having different PFts in the same place. For exampl, grass bellow small tree and small tree below tall tree. To be coherent with other models they provide landCoverFrac file that represent an estimate of the foliage projected cover for each PFTs. This file  should not be used to scale any of the LPJ-GUESS per pft data.
 **********************************************************************************************************
   1) If low spatial resolution regrid into 0.5x0.5 deg
 
