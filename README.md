@@ -23,7 +23,7 @@ This last step is done outside GEE
      This ratio is included in the "IntactAndNonIntactForest_0.5deg.nc" NetCDF file and used in the Step (5).
 
 
-# forest pfts   
+forest pfts   
 {'ORCHIDEE':[1,2,3,4,5,6,7,8],'ORCHIDEE-CNP':[1,2,3,4,5,6,7,8],'JSBACH':[2,3,4,5],'CLASS-CTEM':[0,1,2,3,4],'DLEM':[4,5,6,7,8,9,10,11],
            'LPJ-GUESS':[0,1,2,3,4,5,6,7,8,9],'OCN':[1,2,3,4,5,6,7,8],'CABLE-POP':[0,1,2,3],'ISAM':[0,1,2,3,4,13,14,15,16,17,19,23],
            'ORCHIDEEv3':[1,2,3,4,5,6,7,8],'SDGVM':[6,7,8,9],'JULES':[0,1,2,3,4],'CLASSIC':[0,1,2,3,4],'CLASSIC-N':[0,1,2,3,4],
