@@ -23,7 +23,7 @@ This last step is done outside GEE
      This ratio is included in the "IntactAndNonIntactForest_0.5deg.nc" NetCDF file and used in the Step (5).
 
 
-Forest pfts per model are:
+Forest pfts are:
 {'ORCHIDEE':[1,2,3,4,5,6,7,8],'JSBACH':[2,3,4,5],'CLASS-CTEM':[0,1,2,3,4],'DLEM':[4,5,6,7,8,9,10,11],
   'OCN':[1,2,3,4,5,6,7,8],'CABLE-POP':[0,1,2,3],'ISAM':[0,1,2,3,4,13,14,15,16,17,19,23],
    'SDGVM':[6,7,8,9],'JULES':[0,1,2,3,4],'CLASSIC':[0,1,2,3,4],
@@ -64,7 +64,7 @@ Step (3) Intact and Non Intact forest NBP from models that provide nbppft.
      - We assume most of fFire and fCleach originates from forest, if forest exists in the gridcell.
      - we then do same as 1) above.
 
-  3) If low spatial resolution regrid into 0.5x0.5 deg
+  3) If low spatial resolution regrid into 0.5x0.5 deg using conservative remapping approach.
 
   4) Since the unit of forest NBP is kg/m2/s we multiply it by Intact and NonIntact forest area
      that came from the netcdf file described in "step (1)" and number of seconds in the year to get "kg/gridcell/yr"
@@ -99,7 +99,9 @@ NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model
   3) multiply simulated nbp by this ratio, land area and number of seconds in the year
     ==> from kg/m2/s to kg/gridcell/yr
 
-  4) Split into Intact and Non-Intact forest NBP using "IntactAndNonIntactForest_0.5deg.nc", see step (1)
+  4) Split into Intact and Non-Intact forest NBP using "IntactAndNonIntactForest_0.5deg.nc", see step (1).
+
+  5) We sum over all gridcells to obtain the global estimates for fluxes in intact and non-intact forests.
   
   
 
