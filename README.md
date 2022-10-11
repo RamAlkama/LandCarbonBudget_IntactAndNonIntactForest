@@ -23,14 +23,13 @@ This last step is done outside GEE
      This ratio is included in the "IntactAndNonIntactForest_0.5deg.nc" NetCDF file and used in the Step (5).
 
 
+The NetCDF is availble via request to ram.alkama[at]hotmail.fr
+
 Forest pfts are:
 {'ORCHIDEE':[1,2,3,4,5,6,7,8],'JSBACH':[2,3,4,5],'CLASS-CTEM':[0,1,2,3,4],'DLEM':[4,5,6,7,8,9,10,11],
   'OCN':[1,2,3,4,5,6,7,8],'CABLE-POP':[0,1,2,3],'ISAM':[0,1,2,3,4,13,14,15,16,17,19,23],
    'SDGVM':[6,7,8,9],'JULES':[0,1,2,3,4],'CLASSIC':[0,1,2,3,4],
            'VISIT':[0,1,2,3,4,5,6,7],'YIBs':[0,1,2],'LPX-Bern':[0,1,2,3,4,5,6,7],'CLM5.0':[1,2,3,4,5,6,7,8],'LPJ':[0,1,2,3,4,5]} 
-
-
-The NetCDF is availble via request to ram.alkama[at]hotmail.fr
 
 Reference
 
@@ -103,9 +102,6 @@ NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model
 
   5) We sum over all gridcells to obtain the global estimates for fluxes in intact and non-intact forests.
   
-  
-
-
 
 - Contact: ram.alkama[at]hotmail.fr
 - last update: 09/09/2022
