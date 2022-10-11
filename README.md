@@ -25,8 +25,11 @@ This last step is done outside GEE
 The NetCDF is availble via request to ram.alkama[at]hotmail.fr
 
 Reference
+
 Potapov et al. The last frontiers of wilderness: Tracking loss of intact forest landscapes from 2000 to 2013. https://www.science.org/doi/10.1126/sciadv.1600821, 2017.
+
 Brazil: National Communication 3, https://unfccc.int/documents/66129 , 2020.
+
 Canada. National Inventory Report (NIR), https://unfccc.int/documents/271493 , 2021.
 
 **************************************************************************
