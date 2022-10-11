@@ -7,10 +7,11 @@ The following steps are done in Google Earth Engine (GEE) platform:
 
   1) Convert Hansen tree cover (30m spatial resolution) to forest cover. 
      To do this, FAO definition of forest (more than 20% tree cover per gridcell and a minimum continuity of 0.5 ha) is used.
-  2) Intact and Non-Intact "Forest" masks came from Popatov except over Canada and Brazil from where we got a more acurate masks.
+  2) Intact and Non-Intact "Forest" masks came from Potapov et al. (2017) except over Canada and Brazil, two countries
+with large areas of unmanaged forest, this study uses the national gridded map used in the respective National GreenHouse Gas Inventories (Canada, 2021; Brazil, 2020).
        ==> Popatov mask was updated over Brazil and Canada
   3) Merge the two datasets to get the Intact and Non-Intact forest area per gridcells of around 30m spatial resolution.
-  4) Redrid the data to 0.5 degree spatial resolution. 
+  4) Redrid the data to 0.5 degree spatial resolution (sum the area of all forest gridcells present inside the 0.5 degree). 
      Because of the computational issue, this has been done in two steps. From 30m to 0.01 degree, then from 0.01 to 0.5 degree.
   5) The 0.5 degree Intact and Non-Intact forest area is saved in "IntactAndNonIntactForest_0.5deg.nc" NetCDF file.
      The javascript code "IntactAndNonIntactForest_0.5deg.js" that is used to generate this file is available here. 
@@ -18,12 +19,16 @@ The following steps are done in Google Earth Engine (GEE) platform:
 This last step is done outside GEE
 
   6) We compute the ratio between observed forest cover and the median forest cover coming from the 10 TRENDY S2 models that provide 
-     landCoverFrac. Models are:'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP','LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'.
+     that provide information on land cover fraction per plant functional type (variable/file: landCoverFrac). Models are:'CLASSIC','YIBs','CABLE-POP','JSBACH', 'ISBA-CTRIP','LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'.
      This ratio is included in the "IntactAndNonIntactForest_0.5deg.nc" NetCDF file and used in the Step (5).
 
 The NetCDF is availble via request to ram.alkama[at]hotmail.fr
 
-    
+Reference
+Potapov et al. The last frontiers of wilderness: Tracking loss of intact forest landscapes from 2000 to 2013. https://www.science.org/doi/10.1126/sciadv.1600821, 2017.
+Brazil: National Communication 3, https://unfccc.int/documents/66129 , 2020.
+Canada. National Inventory Report (NIR), https://unfccc.int/documents/271493 , 2021.
+
 **************************************************************************
 Step (2) select dates and do annual mean
 ***************************************************************************
