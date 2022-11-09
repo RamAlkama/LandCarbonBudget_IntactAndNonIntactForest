@@ -103,5 +103,6 @@ NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model
   5) We sum over all gridcells to obtain the global estimates for fluxes in intact and non-intact forests.
   
 
+***********************************************************************
 - Contact: ram.alkama[at]hotmail.fr
 - last update: 09/09/2022
