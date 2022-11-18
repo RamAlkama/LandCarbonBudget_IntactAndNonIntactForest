@@ -30,11 +30,12 @@ var tree7=treeLoss.remap([7],[0],1).unmask();
 var tree8=treeLoss.remap([8],[0],1).unmask();
 var tree9=treeLoss.remap([9],[0],1).unmask();
 var tree10=treeLoss.remap([10],[0],1).unmask();
+var tree11=treeLoss.remap([11],[0],1).unmask();
 
 
 var treecover2010net = treecover2000.multiply(tree1).multiply(tree2).multiply(tree3).multiply(tree4).multiply(tree5)
                                     .multiply(tree6).multiply(tree7).multiply(tree8).multiply(tree9).multiply(tree10)
-                                    .add(gain);
+                                    .multiply(tree11).add(gain);
                              
 var canopyCover = treecover2010net.where(treecover2010net.gt(100),100);
 print (canopyCover);
