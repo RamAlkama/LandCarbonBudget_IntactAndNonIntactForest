@@ -104,5 +104,7 @@ NB: LPJ-GUESS provide landCoverFrac but because of the specificity of this model
   
 
 ***********************************************************************
+# NB: We also used this method to estimate forest soil carbon sink. To do so, we used "cSoil" variable wich is the variable that represent simulated soil carbon stock. We computed soil carbon sink as the difference between the annual mean stock of two consecutive years. 
+
 - Contact: ram.alkama[at]hotmail.fr
 - last update: 09/09/2022
