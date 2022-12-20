@@ -6,7 +6,7 @@
 The following steps are done in Google Earth Engine (GEE) platform:
 
   1) Convert Hansen tree cover (30m spatial resolution) to forest cover. 
-     To do this, FAO definition of forest (more than 20% tree cover per gridcell and a minimum continuity of 0.5 ha) is used. Using this method allows us to get, in general, similar forest area with what countires are reporting eccept over Russia where our estimate is smaller. To overcome this problem we used 10% instead of 20% over Russia. 
+     To do this, FAO definition of forest (more than 20% tree cover per gridcell and a minimum continuity of 0.5 ha) is used. Using this method allows us to get, in general, similar forest area with what countires are reporting except over Russia where our estimate is smaller. To overcome this problem we used 10% instead of 20% over Russia. 
   2) Intact and Non-Intact "Forest" masks came from Potapov et al. (2017) except over Canada and Brazil, two countries
 with large areas of unmanaged forest, this study uses the national gridded map used in the respective National GreenHouse Gas Inventories (Canada, 2021; Brazil, 2020).
        ==> Popatov mask was updated over Brazil and Canada
