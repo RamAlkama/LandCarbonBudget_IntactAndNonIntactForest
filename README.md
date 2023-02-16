@@ -11,7 +11,7 @@ The following steps are done in Google Earth Engine (GEE) platform:
 with large areas of unmanaged forest, this study uses the national gridded map used in the respective National GreenHouse Gas Inventories (Canada, 2021; Brazil, 2020).
        ==> Popatov mask was updated over Brazil and Canada
   3) Merge the two datasets to get the Intact and Non-Intact forest area per gridcells of around 30m spatial resolution.
-  4) Redrid the data to 0.5 degree spatial resolution (sum the area of all forest gridcells present inside the 0.5 degree). 
+  4) Regrid the data to 0.5 degree spatial resolution (sum the area of all forest gridcells present inside the 0.5 degree). 
      Because of the computational issue, this has been done in two steps. From 30m to 0.01 degree, then from 0.01 to 0.5 degree.
   5) The 0.5 degree Intact and Non-Intact forest area is saved in "IntactAndNonIntactForest_0.5deg.tif" tif file.
      The javascript code "IntactAndNonIntactForest_0.5deg.js" (available here) is used to generate this tif file. 
