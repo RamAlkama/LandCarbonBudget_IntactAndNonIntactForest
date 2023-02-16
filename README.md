@@ -22,7 +22,7 @@ The last steps 6 and 7 are done outside GEE
 
   7) We compute the ratio between observed forest cover and the median forest cover coming from the 10 TRENDY S2 models 
      that provide information on land cover fraction per plant functional type (variable/file: landCoverFrac). Models are:'CLASSIC','YIBs','CABLE-POP','JSBACH', 'LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'.
-     This ratio is included in the "IntactAndNonIntactForest_0.5deg.nc" NetCDF file and used in the Step (5).
+     This ratio is used Step (5).
 
 
 The NetCDF is availble via request to ram.alkama[at]hotmail.fr
