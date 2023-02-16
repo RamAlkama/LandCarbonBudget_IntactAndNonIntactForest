@@ -5,21 +5,21 @@
 ***********************************************************************
 The following steps are done in Google Earth Engine (GEE) platform:
 
-  a) Convert Hansen tree cover (30m spatial resolution) to forest cover. 
+  1) Convert Hansen tree cover (30m spatial resolution) to forest cover. 
      To do this, FAO definition of forest (more than 20% tree cover per gridcell and a minimum continuity of 0.5 ha) is used. Using this method allows us to get, in general, similar forest area with what countires are reporting except over Russia where our estimate is smaller. To overcome this problem we used 10% instead of 20% over Russia. 
-  b) Intact and Non-Intact "Forest" masks came from Potapov et al. (2017) except over Canada and Brazil, two countries
+  2) Intact and Non-Intact "Forest" masks came from Potapov et al. (2017) except over Canada and Brazil, two countries
 with large areas of unmanaged forest, this study uses the national gridded map used in the respective National GreenHouse Gas Inventories (Canada, 2021; Brazil, 2020).
        ==> Popatov mask was updated over Brazil and Canada
-  c) Merge the two datasets to get the Intact and Non-Intact forest area per gridcells of around 30m spatial resolution.
-  d) Redrid the data to 0.5 degree spatial resolution (sum the area of all forest gridcells present inside the 0.5 degree). 
+  3) Merge the two datasets to get the Intact and Non-Intact forest area per gridcells of around 30m spatial resolution.
+  4) Redrid the data to 0.5 degree spatial resolution (sum the area of all forest gridcells present inside the 0.5 degree). 
      Because of the computational issue, this has been done in two steps. From 30m to 0.01 degree, then from 0.01 to 0.5 degree.
-  e) The 0.5 degree Intact and Non-Intact forest area is saved in "IntactAndNonIntactForest_0.5deg.tif" tif file.
+  5) The 0.5 degree Intact and Non-Intact forest area is saved in "IntactAndNonIntactForest_0.5deg.tif" tif file.
      The javascript code "IntactAndNonIntactForest_0.5deg.js" (available here) is used to generate this tif file. 
 
 The last steps 6 and 7 are done outside GEE
-  f) This tif file "IntactAndNonIntactForest_0.5deg.tif" is converted to "IntactAndNonIntactForest_0.5deg.nc" NetCDF file which is the format that is used by TRENDY models.
+  6) This tif file "IntactAndNonIntactForest_0.5deg.tif" is converted to "IntactAndNonIntactForest_0.5deg.nc" NetCDF file which is the format that is used by TRENDY models.
 
-  g) We compute the ratio between observed forest cover and the median forest cover coming from the 10 TRENDY S2 models 
+  7) We compute the ratio between observed forest cover and the median forest cover coming from the 10 TRENDY S2 models 
      that provide information on land cover fraction per plant functional type (variable/file: landCoverFrac). Models are:'CLASSIC','YIBs','CABLE-POP','JSBACH', 'LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'.
      This ratio is included in the "IntactAndNonIntactForest_0.5deg.nc" NetCDF file and used in the Step (5).
 
