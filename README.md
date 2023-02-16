@@ -17,6 +17,7 @@ with large areas of unmanaged forest, this study uses the national gridded map u
      The javascript code "IntactAndNonIntactForest_0.5deg.js" (available here) is used to generate this tif file. 
 
 The last steps 6 and 7 are done outside GEE
+
   6) This tif file "IntactAndNonIntactForest_0.5deg.tif" is converted to "IntactAndNonIntactForest_0.5deg.nc" NetCDF file which is the format that is used by TRENDY models.
 
   7) We compute the ratio between observed forest cover and the median forest cover coming from the 10 TRENDY S2 models 
