@@ -16,7 +16,7 @@ with large areas of unmanaged forest, this study uses the national gridded map u
   5) The 0.5 degree Intact and Non-Intact forest area is saved in "IntactAndNonIntactForest_0.5deg.nc" NetCDF file.
      The javascript code "IntactAndNonIntactForest_0.5deg.js" that is used to generate this file is available here. 
 
-This last step is done outside GEE
+This last step 6 is done outside GEE
 
   6) We compute the ratio between observed forest cover and the median forest cover coming from the 10 TRENDY S2 models 
      that provide information on land cover fraction per plant functional type (variable/file: landCoverFrac). Models are:'CLASSIC','YIBs','CABLE-POP','JSBACH', 'LPX-Bern','OCN','JULES','VISIT','VISIT-NIES','SDGVM'.
@@ -25,7 +25,7 @@ This last step is done outside GEE
 
 The NetCDF is availble via request to ram.alkama[at]hotmail.fr
 
-Forest pfts are:
+Forest pfts per model are:
 {'ORCHIDEE':[1,2,3,4,5,6,7,8],'JSBACH':[2,3,4,5],'CLASS-CTEM':[0,1,2,3,4],'DLEM':[4,5,6,7,8,9,10,11],
   'OCN':[1,2,3,4,5,6,7,8],'CABLE-POP':[0,1,2,3],'ISAM':[0,1,2,3,4,13,14,15,16,17,19,23],
    'SDGVM':[6,7,8,9],'JULES':[0,1,2,3,4],'CLASSIC':[0,1,2,3,4],
