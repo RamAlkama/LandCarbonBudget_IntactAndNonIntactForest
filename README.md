@@ -41,6 +41,8 @@ Brazil: National Communication 3, https://unfccc.int/documents/66129 , 2020.
 
 Canada. National Inventory Report (NIR), https://unfccc.int/documents/271493 , 2021.
 
+TRENDY simulations are available via request to S.A.Sitch[at]exeter.ac.uk
+
 **************************************************************************
 Step (2) select dates and do annual mean
 ***************************************************************************
